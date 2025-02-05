@@ -19,7 +19,7 @@
         
         button {
             padding: 10px 15px;
-            background-color: #4CAF50;
+            background-color: #355672;
             color: white;
             border: none;
             border-radius: 5px;
@@ -27,7 +27,7 @@
             
         }
         button:hover {
-            background-color: #45a049;
+            background-color: #727274;
         }
         .btn{
             display: flex;
@@ -46,11 +46,11 @@
         document.getElementById('fetchUsersBtn').addEventListener('click', fetchUserData);
 
         function fetchUserData() {
-            // Clear any existing user list
+           
             const userListContainer = document.getElementById('userList');
             userListContainer.innerHTML = '';
 
-            // Fetch the data from the API
+            
             fetch('https://jsonplaceholder.typicode.com/users')
                 .then(response => response.json())
                 .then(data => {
