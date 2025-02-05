@@ -1,0 +1,94 @@
+Ques 2- What are data types in Javascript? Explain the different types of data types
+         with examples.
+
+   sol- In JavaScript, data types define the kind of values a variable can hold. There are two main categories of data types:
+
+    1)Primitive Data Types (Stores single values, immutable)
+    2) Non-Primitive (Reference) Data Types (Stores complex structures, mutable)
+
+         1. Primitive Data Types
+         These are the basic data types that store simple values. They are immutable, meaning their values cannot be changed once assigned.
+         
+       a)String
+         A string is a sequence of characters enclosed in single, double, or backticks (template literals).
+         
+         EX - 
+
+         let name = "John"; 
+         let greeting = 'Hello, World!';
+         let message = `Hi, ${name}!`;
+
+       b)Number
+         The number data type includes both integers and floating-point numbers.
+         
+         EX-
+         let age = 25; 
+         let price = 99.99; 
+         let temperature = -5; 
+
+        c) Boolean
+         A boolean represents one of two values: true or false. It is commonly used for conditional statements.
+         
+        EX-
+         let isActive = true;
+         let isFinished = false;
+
+         d)Undefined
+         A variable that has been declared but has not been assigned a value is undefined.
+         
+         EX-
+         let score; 
+         console.log(score); 
+
+        e)Null
+         The null value represents an intentional absence of any object value.
+         
+         EX-
+         let data = null;
+         console.log(data);
+
+         f)Symbol
+         A symbol is a unique and immutable primitive data type used to create unique identifiers.
+         
+         EX-
+         let uniqueId = Symbol("id");
+         console.log(uniqueId); 
+
+         g)BigInt
+         BigInt is used for very large numbers that cannot be represented using the number data type.
+         
+         EX-
+         let bigNumber = BigInt(9007199254740991);
+         console.log(bigNumber); 
+
+         2. Non-Primitive (Reference) Data Types
+             These data types store references to complex values and are mutable.
+         
+         a)Object
+         An object is a collection of key-value pairs where keys are strings and values can be of any type.
+         
+        EX-
+         let person = {
+             name: "Alice",
+             age: 30,
+             isActive: true
+         };
+         console.log(person.name); 
+
+         b)Array
+         An array is a type of object that stores multiple values in an ordered list.
+         
+        EX-
+         let colors = ["red", "green", "blue"];
+         let numbers = [1, 2, 3, 4];
+         console.log(colors[0]); 
+         c)
+         Function
+         A function is a reusable block of code that can be called multiple times.
+         
+        EX-
+         function greet() {
+             console.log("Hello!");
+         }
+         greet(); // Output: Hello!
+         
